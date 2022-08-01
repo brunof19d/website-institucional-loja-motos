@@ -1,0 +1,26 @@
+
+/* SECTION LOGIN */
+
+.box-login {
+    width: 300px;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid grey;
+    border-radius: 20%;
+    background-color: rgb(30,33,40);
+    color: white;
+}
+
+/* SECTION ADMIN */
+
+/* BUTTONS */
+
+.btn-login {
+    background-color: cornflowerblue !important;
+    color: black;
+}
+
+.btn-login:hover {
+    background-color: lightsteelblue !important;
+    transition: 1s;
+}

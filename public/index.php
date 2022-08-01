@@ -21,12 +21,6 @@ if (!array_key_exists($pathInfo, $routes)) {
 
 session_start();
 
-$routeLogin = stripos($pathInfo, 'login');
-if ( !isset ( $_SESSION['auth'] ) && $routeLogin === false ) {
-    header('Location: /login');
-    die();
-}
-
 $psr17Factory = new Psr17Factory();
 $creator = new ServerRequestCreator(
     $psr17Factory,

@@ -1,3 +1,106 @@
+html {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    background-color: #ededed;
+}
+
+/* TOPBAR */
+
+#topbar {
+    background-color: rgba(77, 77, 77, .6) !important;
+}
+
+#nav-estoque {
+    margin-left: 20px;
+    background-color: grey;
+    padding: .5rem 1.5rem .4rem !important;
+    border-radius: 16px;
+}
+
+#nav-estoque a {
+    color: #FFFF;
+    text-transform: uppercase !important;
+    font-weight: 500 !important;
+}
+
+#dropdown-estoque li a {
+    color: #707070;
+    font-weight: 400;
+    text-align: center;
+}
+
+#nav-sobre {
+    padding: .5rem 1.5rem .4rem !important;
+}
+
+#nav-sobre a {
+    color: #FFFF;
+    text-transform: uppercase !important;
+    font-weight: 500 !important;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #ededed;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.sidebar a.active {
+    color: white;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar a {
+        float: left;
+    }
+
+    div.content {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
 
 /* SECTION LOGIN */
 
@@ -7,7 +110,7 @@
     padding: 20px;
     border: 1px solid grey;
     border-radius: 20%;
-    background-color: rgb(30,33,40);
+    background-color: rgb(30, 33, 40);
     color: white;
 }
 
@@ -23,4 +126,16 @@
 .btn-login:hover {
     background-color: lightsteelblue !important;
     transition: 1s;
+}
+
+
+/* HOME */
+
+.box-moto-card {
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 10%), 0 -1px 2px 0 rgb(0 0 0 / 10%);
+    margin: 5px 5px 15px 5px;
+    width: 280px;
+    height: 380px;
 }

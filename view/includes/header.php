@@ -10,3 +10,10 @@
 </head>
 
 <body>
+
+<header>
+    <?php require_once __DIR__ . '/../includes/topbar.php'; require_once __DIR__ . '/../includes/sidebar.php'; ?>
+</header>
+
+<main>
+    <div class="content">
